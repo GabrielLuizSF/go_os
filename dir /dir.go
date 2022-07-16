@@ -13,10 +13,10 @@ func DirCreate() {
     fmt.Println("DIR NAME:\t");
     fmt.Scanln(&dirname)
     
-    err := os.Mkdir("../" + dirname, 0755);
+    folder := os.Mkdir("../" + dirname, 0755);
     
-    if err != nil {
-        log.Fatal(err)
+    if folder != nil {
+        log.Fatal(folder)
     }
 
    fmt.Println("Folder Created");
