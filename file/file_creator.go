@@ -22,7 +22,7 @@ func FileCreator(){
   
 	if createFile != nil {
     
-	log.fatal(CreateFile);
+	log.fatal(createFile);
 
   }
 
