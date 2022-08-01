@@ -18,14 +18,17 @@ func main(){
 func FileCreator(){
 
 
-	file := os.Create("express_api.js");
+	file, createFile := os.Create("express_api.js");
   
-	if file != nil {
+	if createFile != nil {
     
-	log.fatal(file);
+	log.fatal(CreateFile);
 
   }
+
   defer file.Close();
+
+
   _,fileWriter := file.WriteString("\n// GET method route\napp.get('/', function (req, res) {\nres.send('GET request to the homepage');\n});\n// POST method route\n\napp.post('/', function (req, res) {\nres.send('POST request to the homepage');\n});\n");
 
   if fileWriter != nil {
