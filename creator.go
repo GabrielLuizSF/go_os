@@ -15,7 +15,6 @@ func main(){
 }
 func UserChoice(){
     var userinput int;
-
     fmt.Println("\n\nOptions:\n 1-DirCreator\t 2-FileCreator\n");
     fmt.Scanln(&userinput)
 
