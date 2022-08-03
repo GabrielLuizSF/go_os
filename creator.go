@@ -7,10 +7,10 @@ import (
 )
 
 func main(){
- for true{
+ 
      UserChoice()
- }
-      
+ 
+     
 	
 }
 func UserChoice(){
